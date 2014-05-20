@@ -11,64 +11,113 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="fonts/ptsansregular/stylesheet.css" type="text/css" charset="utf-8">
   <link rel="stylesheet" href="fonts/goudyserif/stylesheet.css" type="text/css" charset="utf-8">
+  
+  <link rel="icon" href="img/icon-16.png" sizes="16x16">
+  <link rel="icon" href="img/icon-32.png" sizes="32x32">
 
+<script src="js/jquery.js"></script>
 </head>
 
 <body class="normal-state">
   <script>
-    
-  </script>
+    $( document ).ready(function() {
+      $("a").click(function(e) {
+        $(this).parents(".expand").addClass("fullsize");
+        $(this).parents(".expand").siblings().addClass("height0");
+        $(this).parents(".col").addClass("fullsize");
+        $(this).parents(".col").siblings().addClass('minimize');
 
+        $( ".conteudo" ).load( "index.html", function() {
+
+          $(".conteudo").removeClass('min').addClass('max');
+        });
+        e.preventDefault();
+      });
+    });
+  </script>
+  <main class="conteudo min">
+
+  </main>
+  <nav>
   <aside class="col w20">
   	
-  	<article class="h25 gplus">
+  	<article class="h25 expand gplus">
+      <a href="#"><div class="holder">
+        <img src="img/gplusicon.png"/>
+      </div></a>
   	</article>
   	
-  	<article class="h50 lastfm">
+  	<article class="h50 expand lastfm">
+      <div class="holder">
+        <a href="#"><img src="img/lastfmicon.png"/></a>
+      </div>
   	</article>
   	
-  	<article class="h25 facebook">
+  	<article class="h25 expand facebook">
+      <div class="holder">
+        <a href="#"><img src="img/facebookicon.png"/></a>
+      </div>
   	</article>
 
   </aside>
   
   <div class="col w25">
     
-    <article class="h60 webgl">
+    <article class="h60 expand dentclean">
+      <div class="holder">
+        <a href="#"><img src="img/dentelimpoicon.png"/></a>
+      </div>
     </article>
     
-    <article class="h40 github">
+    
+    <article class="h40 expand github">
+      
+      <div class="holder">
+        <a href="#"><img src="img/githubicon.png"/></a>
+      </div>
     </article>
     
   </div>
 
   <div class="col w25">
   	
-  	<article class="h40 worldclock">
+  	<article class="h40 expand worldclock">
   	</article>
   	
-  	<article class="h60 dentclean">
-  	</article>
-  	
+    <article class="h60 expand webgl">
+      <div class="holder">
+        <a href="#"><img src="img/webglicon.png"/></a>
+      </div>
+    </article>
   </div>
   
   
   <div class="col w30">
   	
-  	<article class="h30 linkedin">
+  	<article class="h30 expand linkedin">
+      <div class="holder">
+        <a href="#"><img src="img/linkedinicon.png"/></a>
+      </div>
   	</article>
 
-  	<header class="h30 about">
-  		<img src="img/freedom.png" alt="Foto do cara mais gato desse site"/>
-  		<h1> Evandro Carreira </h1>
-  		<p>Web Developer, cozinheiro de improviso, trompetista solo e eterno aprendiz da vida.</p>
+  	<header class="h30 expand about" itemscope  itemtype="http://schema.org/Person">
+
+      <div id="evandrinho2000">
+  		  <img src="img/freedom.png" alt="Foto do cara mais gato desse site"/>
+      </div>
+  		<h1 itemprop="name"> Evandro Carreira </h1>
+  		<p><span itemprop="jobTitle">Web Developer</span>, cozinheiro de improviso, trompetista solo e eterno aprendiz da vida.</p>
   		<a href="#" class="whitelink">+ Skills</a>
   	</header>
 
-  	<article class="h40 email">
+  	<article class="h40 expand email">
+      <div class="holder">
+        <a href="#"><img src="img/emailicon.png"/></a>
+      </div>
   	</article>
   
   </div>
 
+  </nav>
 </body>
 </html>
