@@ -15,7 +15,7 @@
   <link rel="icon" href="img/icon-16.png" sizes="16x16">
   <link rel="icon" href="img/icon-32.png" sizes="32x32">
 
-<script src="js/jquery.js"></script>
+  <script src="js/jquery.js"></script>
 </head>
 
 <body class="normal-state">
@@ -27,7 +27,7 @@
         $(this).parents(".col").addClass("fullsize");
         $(this).parents(".col").siblings().addClass('minimize');
 
-        $( ".conteudo" ).load( "index.html", function() {
+        $( ".conteudo" ).load( this.attr('href'), function() {
 
           $(".conteudo").removeClass('min').addClass('max');
         });
@@ -65,7 +65,7 @@
     
     <article class="h60 expand dentclean">
       <div class="holder">
-        <a href="#"><img src="img/dentelimpoicon.png"/></a>
+        <a href="dentclean"><img src="img/dentelimpoicon.png"/></a>
       </div>
     </article>
     
