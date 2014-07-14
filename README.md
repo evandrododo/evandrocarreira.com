@@ -1,4 +1,0 @@
-evandrocarreira.com
-===================
-
-Site pessoal
