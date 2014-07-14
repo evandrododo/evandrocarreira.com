@@ -1,0 +1,80 @@
+<style>
+  body,html, viewport,.wrapper {
+    width:100%;
+    height: 100%;
+    padding:0;
+    margin:0;
+  }
+  .flex-row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+
+    justify-content: space-around;
+
+  }
+  .flex-col {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+  }
+
+  .flex-1 { flex:1; }
+  .flex-2 { flex:2; }
+  .flex-3 { flex:3; }
+
+  .group { transition:all 1s; flex:2;}
+  .group:hover { flex:3; }
+
+  .group > * {  transition:all 1s;}
+  .group > aside:hover { flex:2; }
+  .group > header:hover { flex:2; }
+  .group > article:hover { flex:2; }
+  .group > footer:hover { flex:2; }
+
+  header {
+    background: tomato;
+  }
+
+  footer {
+    background: lightgreen;
+  }
+
+  .aside-1 { background-color: #89e; }
+  .aside-2 { background-color: #dd7; }
+  .aside-6 { background-color: #d67; }
+</style>
+
+<body>
+  <html>
+
+    <div class="wrapper flex-row">
+      <div class="group flex-col ">
+        <header class="flex-1"> </header>
+        <article class="flex-1">  </article>
+        <footer class="flex-1"></footer>
+      </div>
+      <div class="group flex-col">
+        <aside class="flex-1 aside-1"> </aside>
+        <aside class="flex-2 aside-2"> </aside>
+        <aside class="flex-1 aside-3"> </aside>
+      </div>
+      <div class="group flex-col">
+        <aside class="flex-1 aside-4"> </aside>
+        <aside class="flex-1 aside-5"> </aside>
+        <aside class="flex-2 aside-6"> </aside>
+      </div>
+
+    </div>
+  </html>
+</body>
