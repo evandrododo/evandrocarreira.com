@@ -1,248 +1,76 @@
-html, body {
-	margin:0;
-	padding:0;
-	width:100%;
-	min-height:100%;
-	height:100%;
-	font-size:18px;
-	overflow:hidden;
-	background-color: black;
-}
-article, header { 
-	transition: all 1s ease-in-out; 
-	box-sizing: border-box;
-	ms-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-}
-a {
-	text-decoration: none;outline: 0;
-    outline-style:none;
-    outline-width:0;}
-nav {
-	margin:0;
-	padding:0;
-	width:100%;
-	min-height:100%;
-	height:100%;
-	font-size:18px;
-	overflow:hidden;
-}
-<<<<<<< Updated upstream
-=======
-a {text-decoration: none;outline: 0;
-    outline-style:none;
-    outline-width:0;}
-nav {
-	margin:0;
-	padding:0;
-	width:100%;
-	min-height:100%;
-	height:100%;
-	font-size:18px;
-	overflow:hidden;}
-article:hover, header:hover {  }
->>>>>>> Stashed changes
-.col {	min-height:100%;float:left;height:100%;position:relative; }
-.w20 { width:20%;}
-.w15 { width:15%;}
-.w25 { width:25%;}
-.w30 { width:30%;}
+body,html, viewport,.wrapper {
+    width:100%;
+    height: 100%;
+    padding:0;
+    margin:0;
+  }
 
-.col > * { position:relative; }
-
-
-.h25 {	width:100%;	height:25%;}
-.h30 {	width:100%;	height:30%;}
-.h35 {	width:100%;	height:35%;}
-.h40 {	width:100%;	height:40%;}
-.h50 {	width:100%;	height:50%;}
-.h60 {	width:100%;	height:60%;}
-
-.about h1 { 
-	font-family: "goudyserif", Georgia, Palatino, sans-serif; font-size:2rem;
-	text-align: left; padding-top:1rem;
-}
-.about p { font-family: "pt_sansregular", Helvetica, Arial, sans-serif;text-align: left;
-padding:0px; margin:0; }
-.about a { font-family: "pt_sansregular", Helvetica, Arial, sans-serif; position:absolute; bottom:1rem;right:1rem;}
-.about { 
-	background-color: #7cf;}
-
-.about img {
-	max-width:100%;
-	max-height:100%;
-}
-.about h1 { margin:0;}
-#evandrinho2000 {
-	max-width:30%;
-	max-height:90%;
-	position:relative;
-	float:left;
-	margin:5px;
-	margin-right: 20px;
-	overflow:hidden;
-	transform:rotate(0deg);
-}
-#evandrinho2000:after {  
-	
-	width:101%;
-	height:101%;
-	position:absolute;
-	top:-100%;
-	left:0;
-	float:left;
-	background: url("../img/grouchoicon.png");
-	background-size:contain;
-	background-repeat:no-repeat;
-	content:"";
-	margin:-1%;
-	transition: 1s all;
-	transform:rotate(180deg);
-}
-#evandrinho2000:hover:after {  
-	top:0;
-	transition: 1s all;
-	transform:rotate(0deg);
-}
-
-<<<<<<< Updated upstream
-.email {  background: url("../img/emailbg.png") center center; background-size: cover; }
-.email .holder { background-color: rgba(255,96,50,0.8); }
-.linkedin {  background: url("../img/linkedinbg.png") center center; background-size: cover; }
-.linkedin .holder { background-color: rgba(34,136,255,0.8); }
-=======
->>>>>>> Stashed changes
-
-.gplus {  background: url("../img/gplusbg.png") center center; background-size: cover; }
-.gplus .holder { background-color: rgba(66,66,66,0.8); }
-.lastfm { background: url("../img/lastfmbg.png") center center; background-size: cover; }
-.lastfm .holder { background-color: rgba(255,48,64,0.8);}
-.facebook {  background: url("../img/facebookbg.png") center center; background-size: cover; }
-.facebook .holder { background-color: rgba(74,103,168,0.8); }
-
-<<<<<<< Updated upstream
-=======
-.email {  background: url("../img/emailbg.png") center center; background-size: cover; }
-.email .holder { background-color: rgba(255,96,50,0.8); }
-.linkedin {  background: url("../img/linkedinbg.png") center center; background-size: cover; }
-.linkedin .holder { background-color: rgba(34,136,255,0.8); }
-
-
-.gplus {  background: url("../img/gplusbg.png") center center; background-size: cover; }
-.gplus .holder { background-color: rgba(66,66,66,0.8); }
-.lastfm { background: url("../img/lastfmbg.png") center center; background-size: cover; }
-.lastfm .holder { background-color: rgba(255,48,64,0.8);}
-.facebook {  background: url("../img/facebookbg.png") center center; background-size: cover; }
-.facebook .holder { background-color: rgba(74,103,168,0.8); }
-
->>>>>>> Stashed changes
-.github { background: url("../img/githubbg.png") center center; background-size: cover; }
-.github .holder { background-color:rgba(0,0,0,0.8); }
-
-.dentclean { background: url("../img/dentcleanbg.png") center center; background-size: cover; }
-.dentclean .holder { background-color:rgba(0,84,128,0.8); }
-
-.webgl { background: url("../img/webglbg.png") center center; background-size: cover; }
-.webgl .holder{ background-color: rgba(238,136,221,0.8);}
-.worldclock { background-color: #294;}
-
-a.whitelink { color:white; text-decoration: none;transition:all 0.2s; text-shadow: 0px 0px 20px #000;}
-a.whitelink:hover { color:black; transition:all 0.7s; text-shadow: 0px 0px 10px #fff; } 	
-<<<<<<< Updated upstream
-
-
-.minimize { 
-	width:0%; 
-	transition:
-	width .5s linear 0s,
-	opacity .5s linear .5s;
-	opacity:0;
-}
-.height0 { 
-	height:0% !important;
-	transition:
-	height .4s linear 0s;
-	}
-.fullsize { 
-	width:100% !important; height:100% !important;
-	transition:
-	height .3s linear 0s,
-	width .5s linear 0s;
-}
-.expand .holder { width:100%; height:100%; opacity:0; transition:all 0.7s; }
-.expand:hover .holder { opacity:1;transition:all 0.7s; }
-.expand:hover .holder img { padding-top:10%;opacity:1;transition:all .7s ease-in-out .1s; }
-.holder img { display: block;
-	padding-top: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    max-height:50%;
-	max-width:50%;
-    transition:all .5s linear 0s;
-	opacity:0;}
-
-.fullsize .holder { opacity:1; }
-.fullsize .holder img { opacity:1; padding-top:1% !important;  
-	max-width:9rem;
-    max-height:20%;transition:all 1s ease-out 0s;
+  .flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    align-items: center;transition: all 1s; 
+  }
+  .media-flex {
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+  }
+  @media (max-width: 1000px) {
+    .media-flex {
+      -webkit-flex-flow: column nowrap;
+      flex-flow: column nowrap;
     }
+  }
+  .flex-row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
 
-=======
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+
+    justify-content: space-around;
+    transition: all 1s; 
+  }
+
+  .flex-col {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    transition: all 1s; 
+  }
+
+  .flex-1 { flex:1; }
+  .flex-2 { flex:2; }
+  .flex-3 { flex:3; }
 
 
-.minimize { 
-	width:0%; 
-	transition:
-	width .5s linear 0s,
-	opacity .5s linear .5s;
-	opacity:0;
+
+
+/* bg doido */
+.background-doido { background: #7cf;
+  animation-name: animacaoCores;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
 }
-.height0 { 
-	height:0% !important;
-	transition:
-	height .4s linear 0s;
-	}
-.fullsize { 
-	width:100% !important; height:100% !important;
-	transition:
-	height .3s linear 0s,
-	width .5s linear 0s;
-}
-
-.expand .holder {width:100%; height:100%; opacity:0;transition:all 0.7s; }
-.expand:hover .holder { opacity:1;transition:all 0.7s;}
-.expand:hover .holder img{ padding-top:10%;opacity:1;transition:all .7s ease-in-out .1s;}
-.holder img { display: block;padding-top:100%;
-    margin-left: auto;
-    margin-right: auto;
-    max-height:190px;
-	max-width:70%;
-    transition:all .5s linear 0s;
-	opacity:0;}
-.fullsize .holder { opacity:1; }
-.fullsize .holder img { opacity:1; padding-top:1% !important;  
-	max-width:9rem;
-    max-height:20%;transition:all 1s ease-out 0s;
-    }
-
->>>>>>> Stashed changes
-.conteudo {
-	background-color: white;
-	width:100%;
-	max-height:100%;
-	position:absolute;
-	left:0;
-	z-index:999;
-	box-shadow: 0px 0px 5px #000;
-}
-.min { 
-	top:100%;
-	opacity:0;
-	transition:top 1s ease-out 0.5s;
-}
-.max {
-	top:30%;
-	opacity:1;
-	transition:top 1s ease-out 0.5s;
+@keyframes animacaoCores {
+  0% {
+    background: #7cf;
+  }
+  25% { }
+  50% { background: #fc7; }
+  75% { }
+  100% { background: #7cf;  }
 }
