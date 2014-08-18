@@ -24,7 +24,7 @@
     font-family: "goudyserif",Georgia,serif;
   }
   #lastfm .solidbg { background-color: rgba(255, 48, 64, 1);}
-  #dentclean .solidbg { background-color: rgba(0, 84, 128, 1);}
+  #twitter .solidbg { background-color: rgba( 10, 90, 50, 1);}
   #linkedin .solidbg { background-color: rgba(34, 136, 255, 1);}
   #sobre .solidbg { background-color: #7cf;}
   #webgl .solidbg { background-color: rgba(238, 136, 221, 1);}
@@ -32,13 +32,13 @@
   #gplus .solidbg { background-color: rgba(66, 66, 66, 1);}
   #github .solidbg { background-color: rgba(0, 0, 0, 1);}
   #facebook .solidbg {  background-color: rgba(74, 103, 168, 1);}
-  #horajs .solidbg { background-color: #294;}
+  #taoofprogramming .solidbg { background-color: #FFD079;}
 
 
   .icon-container { width:50%; height:50%; background-size:contain; background-position: center; background-repeat: no-repeat; margin:auto; top: 0; transform: rotate(0);}
 
   #lastfm .icon-container {background-image: url("img/lastfmicon.png"); }
-  #dentclean .icon-container {background-image: url("img/dentelimpoicon.png"); }
+  #twitter .icon-container {background-image: url("img/twittericon.png"); }
   #linkedin .icon-container {background-image: url("img/linkedinicon.png"); }
   #sobre .icon-container {background-image: url("img/grouchoicon.png"); }
   #webgl .icon-container {background-image: url("img/webglicon.png"); }
@@ -46,10 +46,10 @@
   #gplus .icon-container {background-image: url("img/gplusicon.png"); }
   #github .icon-container {background-image: url("img/githubicon.png"); }
   #facebook .icon-container {background-image: url("img/facebookicon.png");  }
-  #horajs .icon-container {background-image: url("img/worldclock.png"); }
+  #taoofprogramming .icon-container {background-image: url("img/taoicon.png"); }
 
   #lastfm{ background: url("img/lastfmbg.png") center center no-repeat; background-size: cover;}
-  #dentclean{ background: url("img/dentcleanbg.png") center center no-repeat; background-size: cover;}
+  #twitter{ background: url("img/twitterbg.png") center center no-repeat; background-size: cover;}
   #linkedin{ background: url("img/linkedinbg.png") center center no-repeat; background-size: cover;}
   #sobre{ background: url("img/sobrebg.png") center center no-repeat; background-size: cover;}
   #webgl{ background: url("img/webglbg.png") center center no-repeat; background-size: cover;}
@@ -57,7 +57,7 @@
   #gplus{ background: url("img/gplusbg.png") center center no-repeat; background-size: cover;}
   #github{ background: url("img/githubbg.png") center center no-repeat; background-size: cover;}
   #facebook{ background: url("img/facebookbg.png") center center no-repeat; background-size: cover;}
-  #horajs{ background: url("img/worldclockbg.png") center center no-repeat; background-size: cover;}
+  #taoofprogramming{ background: url("img/worldclockbg.png") center center no-repeat; background-size: cover;}
  
   .hover-f2:hover { flex:2; }
   .hover-f3:hover { flex:3; }
@@ -152,6 +152,7 @@
         </footer>
       </div>
       <div class="flex-col flex-1 hover-f2">
+      <!--
         <aside id="horajs" class="flex-3 hover-f4 icon-box"> 
           <div class="solidbg flex"> 
             <div class="icon-container"></div>
@@ -159,13 +160,23 @@
           <div class="content flex"> 
             <a href ="/fuzzy">Fuzzy Horário</a>
           </div>
-        </aside>
-        <aside id="dentclean" class="flex-2  hover-f3 icon-box"> 
+        </aside> -->
+
+        <aside id="taoofprogramming" class="flex-3 hover-f4 icon-box"> 
           <div class="solidbg flex"> 
             <div class="icon-container"></div>
           </div>
           <div class="content flex"> 
-            <a href ="/jogos">Jogos Odontológicos</a>
+            <a href ="tao/thetaoofprogramming.html">Tao of Programming</a>
+          </div>
+        </aside> 
+
+        <aside id="twitter" class="flex-2  hover-f3 icon-box"> 
+          <div class="solidbg flex"> 
+            <div class="icon-container"></div>
+          </div>
+          <div class="content flex"> 
+            <a href ="http://www.twitter.com/evandro_dodo">twitter.com/evandro_dodo</a>
           </div>
         </aside>
       </div>
