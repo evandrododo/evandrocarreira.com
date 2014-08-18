@@ -57,7 +57,7 @@
   #gplus{ background: url("img/gplusbg.png") center center no-repeat; background-size: cover;}
   #github{ background: url("img/githubbg.png") center center no-repeat; background-size: cover;}
   #facebook{ background: url("img/facebookbg.png") center center no-repeat; background-size: cover;}
-  #taoofprogramming{ background: url("img/worldclockbg.png") center center no-repeat; background-size: cover;}
+  #taoofprogramming{ background: url("img/taobg.png") center center no-repeat; background-size: cover;}
  
   .hover-f2:hover { flex:2; }
   .hover-f3:hover { flex:3; }
@@ -167,7 +167,7 @@
             <div class="icon-container"></div>
           </div>
           <div class="content flex"> 
-            <a href ="tao/thetaoofprogramming.html">Tao of Programming</a>
+            <a href ="tao/thetaoofprogramming.html">The Tao of Programming</a>
           </div>
         </aside> 
 
