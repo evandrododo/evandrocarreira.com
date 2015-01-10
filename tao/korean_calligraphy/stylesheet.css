@@ -1,0 +1,11 @@
+@font-face { 
+	font-family: 'Korean Calligraphy'; 
+	src: url('korean_calligraphy.eot'); 
+	src: url('korean_calligraphy.eot?#iefix') format('embedded-opentype'), 
+	url('korean_calligraphy.svg#Korean Calligraphy') format('svg'), 
+	url('korean_calligraphy.woff') format('woff'), 
+	url('korean_calligraphy.ttf') format('truetype'); 
+
+	font-weight: normal; 
+	font-style: normal;
+} 
