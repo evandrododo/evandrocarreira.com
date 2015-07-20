@@ -1,3 +1,18 @@
+<?php
+  $jobs = array("web developer", "web developer", "web designer", "programador", "web developer", "ux designer", "web developer", "cientista", "pirata");
+  $hobbies = array("cozinheiro de improviso", "localhost hacker", "entusiasta opensource", "ativista de sofá" );
+  $brisas = array("trompetista solo", "baixista aposentado", "malabarista nas horas vagas", "poser", "VJ");
+
+  $fator = mt_rand(0,100)/100;
+  $job = floor($fator*count($jobs));
+  $hobbie = floor($fator*count($hobbies));
+  $brisa = floor($fator*count($brisas));
+
+  $frase = "<span itemprop='jobTitle'>_".$jobs[$job]."</span>
+            <br>_".$hobbies[$hobbie]."
+            <br>_".$brisas[$brisa]."
+            <br>_eterno aprendiz da vida";
+?>
 <!doctype html>
 
 <html lang="en">
@@ -58,7 +73,7 @@
   #github{ background: url("img/githubbg.png") center center no-repeat; background-size: cover;}
   #facebook{ background: url("img/facebookbg.png") center center no-repeat; background-size: cover;}
   #taoofprogramming{ background: url("img/taobg.png") center center no-repeat; background-size: cover;}
- 
+
   .hover-f2:hover { flex:2; }
   .hover-f3:hover { flex:3; }
   .hover-f4:hover { flex:4; }
@@ -76,18 +91,18 @@
       top:50%;
       margin-top:-1rem;
       background-color: white;
-      border-top: 0px solid black; 
+      border-top: 0px solid black;
       border-bottom: 0px solid black;
       display: block;
     }
     .icon-box .content a:hover {
-      text-decoration: underline;transition: all 0.3s; 
+      text-decoration: underline;transition: all 0.3s;
     }
   .icon-box .content img { max-width: 70%;max-height: 80%; margin: 10% 15%;}
   .icon-box .solidbg { position:absolute; height:100%; width:100%; overflow:hidden;}
   .icon-box:hover .solidbg { opacity:0;}
 
-  #sobre h1 { 
+  #sobre h1 {
     font-family: "goudyserif",Georgia,serif; font-weight: bold;
   }
   #sobre p {
@@ -132,106 +147,106 @@ ga('send', 'pageview');
     <div class="wrapper flex-row ">
       <div class="flex-col flex-1 hover-f2">
         <aside id="facebook" class="flex-1 hover-f2 icon-box">
-          <div class="solidbg flex"> 
+          <div class="solidbg flex">
             <div class="icon-container"></div>
           </div>
-          <div class="content flex"> 
+          <div class="content flex">
             <a href ="http://facebook.com/evandro.carreira" target="_blank">fb.com/evandro.carreira</a>
           </div>
         </aside>
-        <header id="sobre" class="flex-1  hover-f3 icon-box"> 
-          <div class="solidbg flex"> 
+        <header id="sobre" class="flex-1  hover-f3 icon-box">
+          <div class="solidbg flex">
             <div class="icon-container"></div>
           </div>
-          <div class="content flex media-flex background-doido"  itemscope  itemtype="http://schema.org/Person"> 
+          <div class="content flex media-flex background-doido"  itemscope  itemtype="http://schema.org/Person">
             <div>
-              <img src="img/freedom.png" alt="Foto do cara mais gato desse site"/>
+              <img src="img/freedom.png" alt="Foto do cara mais gato desse site" title="Quem sabe um sorriso"/>
             </div>
             <div>
               <h1 itemprop="name"> Evandro Carreira </h1>
-              <p><span itemprop="jobTitle">Web Developer</span>, cozinheiro de improviso, trompetista solo e eterno aprendiz da vida.</p>
+              <p><?php echo $frase; ?></p>
              <!-- <a href="#" class="whitelink">+ Skills</a> -->
             </div>
           </div>
         </header>
         <footer id="contato" class="flex-1  hover-f2 icon-box">
-          <div class="solidbg flex"> 
+          <div class="solidbg flex">
             <div class="icon-container"></div>
           </div>
-          <div class="content flex"> 
+          <div class="content flex">
             <a href ="mailto:evandro.carreira@gmail.com" target="_blank">evandro.carreira@gmail.com</a>
           </div>
         </footer>
       </div>
       <div class="flex-col flex-1 hover-f2">
       <!--
-        <aside id="horajs" class="flex-3 hover-f4 icon-box"> 
-          <div class="solidbg flex"> 
+        <aside id="horajs" class="flex-3 hover-f4 icon-box">
+          <div class="solidbg flex">
             <div class="icon-container"></div>
           </div>
-          <div class="content flex"> 
+          <div class="content flex">
             <a href ="/fuzzy">Fuzzy Horário</a>
           </div>
         </aside> -->
 
-        <aside id="taoofprogramming" class="flex-3 hover-f4 icon-box"> 
-          <div class="solidbg flex"> 
+        <aside id="taoofprogramming" class="flex-3 hover-f4 icon-box">
+          <div class="solidbg flex">
             <div class="icon-container"></div>
           </div>
-          <div class="content flex"> 
+          <div class="content flex">
             <a href ="tao/thetaoofprogramming.html">The Tao of Programming</a>
           </div>
-        </aside> 
+        </aside>
 
-        <aside id="twitter" class="flex-2  hover-f3 icon-box"> 
-          <div class="solidbg flex"> 
+        <aside id="twitter" class="flex-2  hover-f3 icon-box">
+          <div class="solidbg flex">
             <div class="icon-container"></div>
           </div>
-          <div class="content flex"> 
+          <div class="content flex">
             <a href ="http://www.twitter.com/evandro_dodo">twitter.com/evandro_dodo</a>
           </div>
         </aside>
       </div>
       <div class="flex-col flex-1 hover-f2">
-        <article id="lastfm"class="flex-2 hover-f3 icon-box"> 
+        <article id="lastfm"class="flex-2 hover-f3 icon-box">
           <div class="solidbg flex">
             <div class="icon-container"></div>
           </div>
-          <div class="content flex"> 
+          <div class="content flex">
             <a href ="http://www.lastfm.com.br/user/evandro_dodo" target="_blank">lastfm.com/evandro_dodo</a>
           </div>
         </article>
-        <aside id="webgl" class="flex-3 hover-f4 icon-box"> 
-          <div class="solidbg flex"> 
+        <aside id="webgl" class="flex-3 hover-f4 icon-box">
+          <div class="solidbg flex">
             <div class="icon-container"></div>
           </div>
-          <div class="content flex"> 
+          <div class="content flex">
             <a href ="webgl/">WebGL Experiments</a>
           </div>
         </aside>
       </div>
       <div class="flex-col flex-1 hover-f2">
-        <aside id="linkedin" class="flex-1 hover-f3 icon-box"> 
-          <div class="solidbg flex"> 
+        <aside id="linkedin" class="flex-1 hover-f3 icon-box">
+          <div class="solidbg flex">
             <div class="icon-container"></div>
           </div>
-          <div class="content flex"> 
+          <div class="content flex">
             <a href ="https://www.linkedin.com/profile/view?id=24704595" target="_blank">linkedin.com/eu</a>
           </div>
         </aside>
         <aside id="github" class="flex-2 hover-f3 icon-box">
-          <div class="solidbg flex"> 
+          <div class="solidbg flex">
             <div class="icon-container"></div>
-          </div> 
-          <div class="content flex"> 
+          </div>
+          <div class="content flex">
             <a href ="https://www.github.com/evandrododo" target="_blank">github.com/evandrododo</a>
           </div>
         </aside>
-        <aside id="gplus" class="flex-1 hover-f2 icon-box"> 
-          <div class="solidbg flex"> 
+        <aside id="gplus" class="flex-1 hover-f2 icon-box">
+          <div class="solidbg flex">
             <div class="icon-container"></div>
           </div>
-          <div class="content flex"> 
+          <div class="content flex">
             <a href ="https://plus.google.com/+EvandroCarreira" target="_blank">plus/+EvandroCarreira</a>
           </div>
         </aside>

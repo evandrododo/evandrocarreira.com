@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>GlitcHype - Efeito de "Glitch" pra trocar texto</title>
+
+  <meta name="description" solidbg="Efeito de "Glitch" pra trocar texto">
+  <meta name="author" solidbg="Evandro Carreira">
+
+  <link rel="stylesheet" href="fonts/ptsansregular/stylesheet.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="fonts/goudyserif/stylesheet.css" type="text/css" charset="utf-8">
+
+  <link rel="icon" href="img/icon-16.png" sizes="16x16">
+  <link rel="icon" href="img/icon-32.png" sizes="32x32">
+  <script src="../js/jquery.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+  a {
+    color:#000;
+    text-decoration: none;
+    font-family: "goudyserif",Georgia,serif;
+  }
+  html, body {
+      background-color: black;
+      color:white;
+  }
+  </style>
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-53642504-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+    <div class="glitchype">
+        <input list="browsers">
+
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </div>
+    <script>
+        var opcoes = $(".glitchype datalist option").get(),
+        textos = new Array();
+        opcoes.forEach(function(Opcao) {
+            textos.push(Opcao.value);
+        });
+        glitchHypeEmbaralha(textos[0]);
+
+        // Inicia a troca
+
+        function glitchHypeEmbaralha(texto) {
+            var posicoesDisponiveis = [];
+            for(i = 0; i<texto.length; i++) {
+                posicoesDisponiveis.push(i);
+            }
+            posicoesDisponiveis = shuffleArray(posicoesDisponiveis)
+            var glitchChars = ['#','%','*','»','?','€','®','↓','n','µ','ŋ',' ','đ','ð','®','£','e'];
+            for(i = 0; i<texto.length; i++) {
+
+                var posicaoArray = Math.floor(Math.random()*posicoesDisponiveis.length),
+                    posicao = posicoesDisponiveis[posicaoArray];
+                posicoesDisponiveis.splice(posicaoArray, 1)
+                texto = glitchHypeChar(texto, glitchChars, posicao);
+                $(".glitchype input").val(texto);
+            }
+        }
+        function glitchHypeChar(texto, glitchChars, posicao) {
+            var glitCHar = glitchChars[Math.floor(Math.random()*glitchChars.length)];
+            return texto.substring(0, posicao) + glitCHar + texto.substring(posicao+1, texto.length);
+        }
+        function shuffleArray(array) {
+            for (var i = array.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+            return array;
+        }
+    </script>
+</body>
+</html>
