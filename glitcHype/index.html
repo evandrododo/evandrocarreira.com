@@ -28,6 +28,12 @@
       background-color: black;
       color:white;
   }
+.glitchype input {
+	background-color: transparent;
+	color: white;
+	font-size: 2em;
+	border: 0;
+}
   </style>
 <!-- Google Analytics -->
 <script>
@@ -57,29 +63,36 @@ ga('send', 'pageview');
         </datalist>
     </div>
     <script>
+	// Traz todas as opções de troca
         var opcoes = $(".glitchype datalist option").get(),
         textos = new Array();
         opcoes.forEach(function(Opcao) {
             textos.push(Opcao.value);
         });
-        glitchHypeEmbaralha(textos[0]);
+        glitchHypeEmbaralha(textos[0], 1000);
 
         // Inicia a troca
 
-        function glitchHypeEmbaralha(texto) {
+        function glitchHypeEmbaralha(texto, tempoAnimacao) {
+	var tempoPorLetra = tempoAnimacao/texto.length;
+		// Seta um array com as posições disponíveis para troca de char (inicialmente são todas)
             var posicoesDisponiveis = [];
             for(i = 0; i<texto.length; i++) {
                 posicoesDisponiveis.push(i);
             }
             posicoesDisponiveis = shuffleArray(posicoesDisponiveis)
             var glitchChars = ['#','%','*','»','?','€','®','↓','n','µ','ŋ',' ','đ','ð','®','£','e'];
-            for(i = 0; i<texto.length; i++) {
-
+		// Passa por todo o texto sorteando uma posição de char e modificando esse char
+            for(var i = 0; i<texto.length; i++) {
+		console.log(i);
                 var posicaoArray = Math.floor(Math.random()*posicoesDisponiveis.length),
                     posicao = posicoesDisponiveis[posicaoArray];
                 posicoesDisponiveis.splice(posicaoArray, 1)
-                texto = glitchHypeChar(texto, glitchChars, posicao);
-                $(".glitchype input").val(texto);
+                var texto = glitchHypeChar(texto, glitchChars, posicao);
+		window.setTimeout(function(texto) {
+			 $(".glitchype input").val(texto);
+		}, i*tempoPorLetra, texto);
+
             }
         }
         function glitchHypeChar(texto, glitchChars, posicao) {
