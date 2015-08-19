@@ -144,12 +144,12 @@ ga('send', 'pageview');
         </aside>
       </div>
       <div class="flex-col flex-1 hover-f2">
-        <aside id="linkedin" class="flex-1 hover-f3 icon-box">
+        <aside id="yeswequero" class="flex-1 hover-f3 icon-box">
           <div class="solidbg flex">
             <div class="icon-container"></div>
           </div>
           <div class="content flex">
-            <a href ="https://www.linkedin.com/profile/view?id=24704595" target="_blank">linkedin.com/eu</a>
+            <a href="yeswequero43">Yes We Quero</a>
           </div>
         </aside>
         <aside id="github" class="flex-2 hover-f3 icon-box">
@@ -160,12 +160,12 @@ ga('send', 'pageview');
             <a href ="https://www.github.com/evandrododo" target="_blank">github.com/evandrododo</a>
           </div>
         </aside>
-        <aside id="gplus" class="flex-1 hover-f2 icon-box">
+        <aside id="webfonts" class="flex-1 hover-f2 icon-box">
           <div class="solidbg flex">
             <div class="icon-container"></div>
           </div>
           <div class="content flex">
-            <a href ="https://plus.google.com/+EvandroCarreira" target="_blank">plus/+EvandroCarreira</a>
+            <a href="webfonts">Webfonts</a>
           </div>
         </aside>
       </div>
