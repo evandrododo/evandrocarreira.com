@@ -56,7 +56,8 @@
   #sobre .solidbg { background-color: #7cf;}
   #webgl .solidbg { background-color: rgba(238, 136, 221, 1);}
   #contato .solidbg { background-color: rgba(255, 96, 50, 1);}
-  #gplus .solidbg { background-color: rgba(66, 66, 66, 1);}
+  #webfonts .solidbg { background-color: rgba(66, 66, 66, 1);}
+  #yeswequero .solidbg { background-color: rgb(0,102,0);}
   #github .solidbg { background-color: rgba(0, 0, 0, 1);}
   #facebook .solidbg {  background-color: rgba(74, 103, 168, 1);}
   #taoofprogramming .solidbg { background-color: #FFD079;}
@@ -70,7 +71,8 @@
   #sobre .icon-container {background-image: url("img/grouchoicon.png"); }
   #webgl .icon-container {background-image: url("img/webglicon.png"); }
   #contato .icon-container {background-image: url("img/emailicon.png"); }
-  #gplus .icon-container {background-image: url("img/gplusicon.png"); }
+  #webfonts .icon-container {background-image: url("img/webfontsicon.png"); }
+  #yeswequero .icon-container {background-image: url("img/pvicon.png"); }
   #github .icon-container {background-image: url("img/githubicon.png"); }
   #facebook .icon-container {background-image: url("img/facebookicon.png");  }
   #taoofprogramming .icon-container {background-image: url("img/taoicon.png"); }
@@ -81,7 +83,8 @@
   #sobre{ background: url("img/sobrebg.png") center center no-repeat; background-size: cover;}
   #webgl{ background: url("img/webglbg.png") center center no-repeat; background-size: cover;}
   #contato{ background: url("img/emailbg.png") center center no-repeat; background-size: cover;}
-  #gplus{ background: url("img/gplusbg.png") center center no-repeat; background-size: cover;}
+  #webfonts{ background: url("img/webfontsbg.png") center center no-repeat; background-size: cover;}
+  #yeswequero{ background: url("img/yeswequerobg.png") center center no-repeat; background-size: cover;}
   #github{ background: url("img/githubbg.png") center center no-repeat; background-size: cover;}
   #facebook{ background: url("img/facebookbg.png") center center no-repeat; background-size: cover;}
   #taoofprogramming{ background: url("img/taobg.png") center center no-repeat; background-size: cover;}
@@ -239,12 +242,12 @@ ga('send', 'pageview');
         </aside>
       </div>
       <div class="flex-col flex-1 hover-f2">
-        <aside id="linkedin" class="flex-1 hover-f3 icon-box">
+        <aside id="yeswequero" class="flex-1 hover-f3 icon-box">
           <div class="solidbg flex">
             <div class="icon-container"></div>
           </div>
           <div class="content flex">
-            <a href ="https://www.linkedin.com/profile/view?id=24704595" target="_blank">linkedin.com/eu</a>
+            <a href="yeswequero43">Yes We Quero</a>
           </div>
         </aside>
         <aside id="github" class="flex-2 hover-f3 icon-box">
@@ -255,12 +258,12 @@ ga('send', 'pageview');
             <a href ="https://www.github.com/evandrododo" target="_blank">github.com/evandrododo</a>
           </div>
         </aside>
-        <aside id="gplus" class="flex-1 hover-f2 icon-box">
+        <aside id="webfonts" class="flex-1 hover-f2 icon-box">
           <div class="solidbg flex">
             <div class="icon-container"></div>
           </div>
           <div class="content flex">
-            <a href ="https://plus.google.com/+EvandroCarreira" target="_blank">plus/+EvandroCarreira</a>
+            <a href="webfonts">Webfonts</a>
           </div>
         </aside>
       </div>
