@@ -149,7 +149,7 @@ ga('send', 'pageview');
             <div class="icon-container"></div>
           </div>
           <div class="content flex">
-            <a href="yeswequero43">Yes We Quero</a>
+            <a href="yeswequero43/index.html">Yes We Quero</a>
           </div>
         </aside>
         <aside id="github" class="flex-2 hover-f3 icon-box">
