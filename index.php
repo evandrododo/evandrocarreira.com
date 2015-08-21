@@ -14,19 +14,7 @@
             <br>_eterno aprendiz da vida";
 ?>
 <!doctype html>
-
-<?php
-  $jobs = array("Web Developer", "Programador", "UX Designer", "Cientista", "Pirata");
-  $hobbies = array("cozinheiro de improviso", "localhost hacker", "entusiasta opensource" );
-  $brisas = array("trompetista solo", "baixista aposentado", "poser", "VJ");
-
-  $fator = 0.3;
-  $job = floor($fator*count($jobs));
-  $hobbie = floor($fator*count($hobbies));
-  $brisa = floor($fator*count($brisas));
-
-  $frase = "<span itemprop='jobTitle'>".$jobs[$job]."</span>, ".$hobbies[$hobbie].", ".$brisas[$brisa]." e eterno aprendiz da vida";
-?><html lang="en">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
