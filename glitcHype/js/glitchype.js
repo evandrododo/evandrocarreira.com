@@ -34,10 +34,17 @@ function glitchHypeDesembaralha(elem, textoNovo, tempoAnimacao) {
     // Completa com espaços em branco o texto que for menor
     if(textoAntigo.length < textoNovo.length) {
         var whitespaces = Array(textoNovo.length).join(" ");
-        textoAntigo.paddingRight(whitespaces);
+        console.log('texto novo'+textoNovo.length);
+        console.log('texto antigo');
+        console.log(textoAntigo.length);
+        textoAntigo = textoAntigo.paddingRight(whitespaces);
+        console.log(textoAntigo.length);
     } else {
+        console.log('texto nov');
+        console.log(textoNovo.length);
         var whitespaces = Array(textoAntigo.length+1).join(" ");
         textoNovo = textoNovo.paddingRight(whitespaces);
+        console.log(textoNovo.length);
     }
 
     console.log('antigo: ' + textoAntigo);
