@@ -16,10 +16,7 @@ $(".glitchype").each( function(){
         window.setTimeout(function(it) {
             glitchHypeEmbaralha(inputData,textos[it], velocidade);
 
-                console.log(textos[it]);
-                console.log('para');
             window.setTimeout(function(textoNovo) {
-                console.log(textos[it+1]);
                 glitchHypeDesembaralha(inputData,textos[it+1], velocidade);
             }, 800);
         }, it*intervalo+intervalo, it );
@@ -34,21 +31,14 @@ function glitchHypeDesembaralha(elem, textoNovo, tempoAnimacao) {
     // Completa com espaços em branco o texto que for menor
     if(textoAntigo.length < textoNovo.length) {
         var whitespaces = Array(textoNovo.length).join(" ");
-        console.log('texto novo'+textoNovo.length);
-        console.log('texto antigo');
-        console.log(textoAntigo.length);
         textoAntigo = textoAntigo.paddingRight(whitespaces);
-        console.log(textoAntigo.length);
     } else {
-        console.log('texto nov');
-        console.log(textoNovo.length);
         var whitespaces = Array(textoAntigo.length+1).join(" ");
         textoNovo = textoNovo.paddingRight(whitespaces);
-        console.log(textoNovo.length);
     }
+    // Muda o data-text (pro efeito do css)
+    elem.parent().data("text", textoNovo);  
 
-    console.log('antigo: ' + textoAntigo);
-    console.log('novo: ' + textoNovo);
     var tempoPorLetra = tempoAnimacao / textoNovo.length;
     // Seta um array com as posições disponíveis para troca de char (inicialmente são todas)
     var posicoesDisponiveis = [];
@@ -65,7 +55,6 @@ function glitchHypeDesembaralha(elem, textoNovo, tempoAnimacao) {
         posicoesDisponiveis.splice(posicaoArray, 1);
         // Carrega o texto com uma letra trocada
         var textoAntigo = unglitchHypeChar(textoAntigo, textoNovo, posicao);
-        console.log(textoAntigo);
 
         window.setTimeout(function(textoAntigo) {
             elem.val(textoAntigo);

@@ -13,6 +13,8 @@ body {
 .glitchype {
     top: 30vh;
     width: 100%;
+    position: relative;
+    z-index:1;
 }
 
 .glitchype input {
@@ -25,4 +27,29 @@ body {
     border: 0;
     font-weight: bold;
     width: 100%;
+}
+
+.glitchype::before,
+.glitchype::after {
+    content: attr(data-text);
+    position:absolute;
+    width: 100%;
+    top: 0.5rem; 
+    z-index:-1;
+    color: white;
+    font-size: 3em;
+    padding:1rem 0;
+    font-family: 'Inconsolata';
+    text-align: center;
+    border: 0;
+    font-weight: bold;
+}
+
+.glitchype::before {
+    left:2px;
+    color:blue;
+}
+.glitchype::after {
+    left:-2px;
+    color:red;
 }

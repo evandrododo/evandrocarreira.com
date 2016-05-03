@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sketch</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/underscore-min.js"></script>
+  <script src="js/p5.min.js"></script>
+  <script src="js/p5.dom.js"></script>
+  <script src="js/sketchline.js"></script>
+  <script src="js/neobrush.js"></script>
+</head>
+<body>
+<style>
+.transp{
+    background-color:transparent;
+    border: 1px solid white;
+    padding:0.5em 1em;
+    margin: 0.5em;
+}
+</style>
+      <div class="controls text-center">
+        <p>Color Source:</p>
+        <div class="margin-bottom">
+          <a class="color-source active" href="">
+</a>
+          <a class="color-source" href=""></a>
+          <a class="color-source" href=""><img src="img/source-1.jpg" alt="" data-image='1' class="img-circle"></a>
+          <a class="color-source" href=""><img src="img/source-4.jpg" alt="" data-image='4'  class="img-circle"></a>
+          <a class="color-source" href=""></a>
+          <a class="color-source" href=""></a>
+          <a class="color-source" href=""></a>
+          <a class="color-source" href=""></a>
+          <a class="color-source" href=""></a>
+        </div>
+        <p>Presets:</p>
+        <div>
+          <button class="transp">B</button>
+          <button class="transp">S</button>
+          <button class="transp">T</button>
+          <button class="transp">F</button>
+          <button class="transp">N</button>
+        </div>
+        <p>
+          Number of Lines:<br>
+          <input type="range" id="number-of-lines" min="10" max="200" value="100">
+        </p>
+        <p>
+          Easing:<br>
+          <input type="range" id="easing" min="0.01" max="0.99" value="0.25" step="0.01">
+        </p>
+        <p>
+          Easing Jitter:<br>
+          <input type="range" id="easing-jitter" min="0" max="0.3" value="0.1" step="0.01">
+        </p>
+        <p>
+          Speed:<br>
+          <input type="range" id="speed" min="0.01" max="0.99" value="0.3" step="0.01">
+        </p>
+        <p>
+          Speed Jitter:<br>
+          <input type="range" id="speed-jitter" min="0" max="0.99" value="0.1" step="0.01">
+        </p>
+        <p>
+          Verticies:<br>
+          <input type="range" id="vertices" min="1" max="30" value="8" step="1">
+        </p>
+        <p class="margin-bottom">
+          Verticies Jitter:<br>
+          <input type="range" id="vertices-jitter" min="0" max="10" value="1" step="1">
+        </p>
+        <button id="save" class="transp">Save</button>
+        <button id="clear" class="transp">Clear</button>
+      </div>
+      <div id="neobrush"></div>
+</body>
+</html>
